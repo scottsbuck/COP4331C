@@ -15,9 +15,6 @@ export default class Navbar extends Component {
                         <Link to = "/dish" className = "nav-link">Dishes</Link>
                         </li>
                         <li className = "navbar-item">
-                        <Link to = "/create" className = "nav-link">Create New Dish</Link>
-                        </li>
-                        <li className = "navbar-item">
                         <Link to = "/cart" className = "nav-link">Shopping Cart</Link>
                         </li>
                         <li className = "navbar-item">
