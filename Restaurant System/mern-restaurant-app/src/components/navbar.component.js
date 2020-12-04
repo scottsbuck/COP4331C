@@ -4,18 +4,7 @@ import {Link} from 'react-router-dom';
 export default class Navbar extends Component {
 
     render() {
-        if (localStorage.getItem("isLoggedOut").localeCompare("yes") === 0)
-        {
-            return (
-                <nav className = "navbar navbar-dark bg-dark navbar-expand-lg">
-                    <Link to = "/" className = "navbar-brand">Restaurant System</Link>
-                    <div className = "collapse navbar-collapse">
-                    </div>
-                </nav>
-            )
-            
-        }
-        else if (localStorage.getItem("UserType").localeCompare("customer") === 0)
+        if (localStorage.getItem("UserType").localeCompare("customer") === 0)
         {
             return (
                 <nav className = "navbar navbar-dark bg-dark navbar-expand-lg">
